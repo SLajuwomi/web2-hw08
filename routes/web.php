@@ -12,3 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', 'BookController@index');
+Route::get('/error', 'BookController@error');
+Route::get('/addbook', 'BookController@addbook');
+Route::POST('/addbook', 'BookController@postaddbook');
+Route::get('/bookdetail', 'BookController@bookdetail');
+Route::POST('/delete_book', 'BookController@delete_book');
